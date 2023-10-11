@@ -1,9 +1,7 @@
 # Stage 1: Base image
-FROM pytorch/pytorch:2.0.1-cuda11.7-cudnn8-runtime as base
-# FROM nvidia/cuda:11.8.0-devel-ubuntu22.04 as base
+FROM pytorch/pytorch:2.1.0-cuda11.8-cudnn8-runtime as base
 
 # Set environment variables
-# ENV LLM_MODEL_NAME="meta-llama/Llama-2-7b-chat-hf"
 ENV TRANSFORMERS_OFFLINE=1
 ENV HF_HUB_OFFLINE=1
 

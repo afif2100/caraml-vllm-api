@@ -10,6 +10,8 @@ download:
 	# git clone https://huggingface.co/TheBloke/Llama-2-7B-AWQ models
 	git clone https://huggingface.co/4bit/Llama-2-7b-chat-hf models
 
+build:
+	docker build -t vllm .
 
 run-fastapi:
 	python -m vllm.entrypoints.api_server \
