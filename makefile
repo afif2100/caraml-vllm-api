@@ -21,4 +21,4 @@ run-openai:
 
 run:
 	python app.py --model models \
-	--dtype float16 
+	--dtype half 

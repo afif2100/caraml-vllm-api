@@ -1,13 +1,6 @@
 torch==2.0.1
 transformers==4.34.0
 huggingface_hub
-accelerate 
-bitsandbytes
-xformers
 uvicorn
-scipy
 fastapi
-auto_gptq --extra-index-url https://huggingface.github.io/autogptq-index/whl/cu117/  # Use cu117 if on CUDA 11.7
-pyjwt
-python-multipart
-optimum
+vllm==0.2.0
